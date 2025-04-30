@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ## Hosting a Flask Application on EC2 with Gunicorn and Nginx
 
