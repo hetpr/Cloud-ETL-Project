@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 ## Hosting a Flask Application on EC2 with Gunicorn and Nginx
 
 This guide will walk you through the process of setting up a Flask application on an EC2 instance, using Gunicorn as the WSGI server and Nginx as a reverse proxy.
