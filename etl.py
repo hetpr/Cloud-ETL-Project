@@ -9,7 +9,7 @@ import boto3
 import os
 
 # Specify your S3 bucket and path
-bucket_name = 'project-de-datewithdata'
+bucket_name = 'projec-de-het'
 prefix = 'warehouse/'
 
 # Initialize S3 client
@@ -45,7 +45,7 @@ Mark_node1704390766767 = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
     format="csv",
     connection_options={
-        "paths": ["s3://project-de-datewithdata/staging/mark/"],
+        "paths": ["s3://projec-de-het/staging/mark/"],
         "recurse": True,
     },
     transformation_ctx="Mark_node1704390766767",
@@ -59,7 +59,7 @@ Student_node1704390766920 = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
     format="csv",
     connection_options={
-        "paths": ["s3://project-de-datewithdata/staging/student/"],
+        "paths": ["s3://projec-de-het/staging/student/"],
         "recurse": True,
     },
     transformation_ctx="Student_node1704390766920",
@@ -72,7 +72,7 @@ DW_node1704390869493 = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
     format="csv",
     connection_options={
-        "paths": ["s3://project-de-datewithdata/warehouse/"],
+        "paths": ["s3://projec-de-het/warehouse/"],
         "recurse": True,
     },
     transformation_ctx="DW_node1704390869493",
@@ -113,7 +113,7 @@ AmazonS3_node1704390958322 = glueContext.write_dynamic_frame.from_options(
     connection_type="s3",
     format="glueparquet",
     connection_options={
-        "path": "s3://project-de-datewithdata/warehouse/",
+        "path": "s3://projec-de-het/warehouse/",
         "partitionKeys": [],
     },
     format_options={"compression": "snappy"},
