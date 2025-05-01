@@ -83,7 +83,7 @@ print("Read DW Data")
 Join_node1704390823387 = Join.apply(
     frame1=Mark_node1704390766767,
     frame2=Student_node1704390766920,
-    keys1=["student_id"],
+    keys1=["student_is"],
     keys2=["id"],
     transformation_ctx="Join_node1704390823387",
 )
